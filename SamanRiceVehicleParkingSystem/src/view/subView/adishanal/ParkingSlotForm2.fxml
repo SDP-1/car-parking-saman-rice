@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="342.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.subViewContoller.aditionalFormContoller.ParkingSlotForm2Contoller">
+   <children>
+      <Label prefHeight="21.0" prefWidth="529.0" style="-fx-background-color: #c9c9c9;" text=" Parking Slot View" />
+      <ImageView fitHeight="322.0" fitWidth="529.0" layoutY="21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Image/park.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="50.0" layoutY="46.0" prefHeight="100.0" prefWidth="457.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label fx:id="lbl1" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" text="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl2" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" text="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl3" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl4" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl5" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl6" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl7" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="7">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="50.0" layoutY="220.0" prefHeight="100.0" prefWidth="457.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label fx:id="lbl14" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="14">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl13" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="13">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl12" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="12">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl11" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="11">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl10" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="10">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl9" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl8" alignment="CENTER" prefHeight="100.0" prefWidth="65.0" style="-fx-border-color: #000000;" text="8">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="83.0" layoutY="25.0" prefHeight="21.0" prefWidth="10.0" text="V" />
+      <Label layoutX="142.0" layoutY="25.0" text="V" />
+      <Label layoutX="209.0" layoutY="25.0" text="V" />
+      <Label layoutX="274.0" layoutY="25.0" text="V" />
+      <Label layoutX="147.0" layoutY="319.0" text="V" />
+      <Label layoutX="214.0" layoutY="319.0" text="V" />
+      <Label layoutX="79.0" layoutY="319.0" text="B" />
+      <Label layoutX="468.0" layoutY="319.0" text="L" />
+      <Label layoutX="275.0" layoutY="319.0" text="L" />
+      <Label layoutX="468.0" layoutY="25.0" text="L" />
+      <Label layoutX="405.0" layoutY="25.0" text="L" />
+      <Label layoutX="332.0" layoutY="25.0" text="L" />
+      <Label layoutX="405.0" layoutY="319.0" text="L" />
+      <Label layoutX="336.0" layoutY="319.0" text="L" />
+      <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="506.0" layoutY="2.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/cancel.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

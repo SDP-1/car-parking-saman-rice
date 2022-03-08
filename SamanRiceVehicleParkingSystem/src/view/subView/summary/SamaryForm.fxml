@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="590.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.subViewContoller.sammaryContoller.SamaryFormContoller">
+   <children>
+      <Label prefHeight="590.0" prefWidth="971.0" style="-fx-background-color: #014493;" />
+      <Label layoutX="24.0" layoutY="15.0" text="Parked And Delivery Summary" textFill="WHITE">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="29.0" />
+         </font>
+      </Label>
+      <Separator layoutY="57.0" prefHeight="0.0" prefWidth="971.0" />
+      <ImageView fitHeight="21.0" fitWidth="19.0" layoutX="952.0" layoutY="5.0" onMouseClicked="#closeClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/cancel.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblSummary" layoutX="13.0" layoutY="71.0" onKeyPressed="#keypress" prefHeight="505.0" prefWidth="945.0" style="-fx-background-radius: 5;">
+        <columns>
+          <TableColumn fx:id="clmVehicleNo" prefWidth="89.0" text="Vehicle No" />
+          <TableColumn fx:id="clmType" prefWidth="100.0" text="Type" />
+            <TableColumn fx:id="clmSlot" prefWidth="70.0" text="Slot" />
+            <TableColumn fx:id="clmParkedDriverName" prefWidth="165.0" text="Parked Driver Name" />
+            <TableColumn fx:id="clmParkedTime" prefWidth="180.0" sortType="DESCENDING" text="Parked Time" />
+            <TableColumn fx:id="clmDiliveryDrivrName" prefWidth="160.0" text="Delivery Driver Name" />
+            <TableColumn fx:id="clmDeliveryTime" prefWidth="180.0" text="Delivery Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="576.0" layoutY="16.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="371.0" promptText="Search" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </TextField>
+      <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="583.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/search2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

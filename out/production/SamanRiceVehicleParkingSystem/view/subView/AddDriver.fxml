@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="325.0" prefWidth="639.0" style="-fx-background-color: #014493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.subViewContoller.AddDriverContoller">
+    <children>
+        <Label layoutX="1.0" prefHeight="21.0" prefWidth="639.0" style="-fx-background-color: #c9c9c9;" text=" Add Driver" />
+        <ImageView fitHeight="21.0" fitWidth="19.0" layoutX="621.0" layoutY="1.0" onMouseClicked="#closeClick" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Image/cancel.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="509.0" layoutY="280.0" mnemonicParsing="false" onAction="#addDriverOnAction" prefHeight="31.0" prefWidth="122.0" text="Add Driver" />
+        <Label layoutX="84.0" layoutY="53.0" text="Driver Name" textFill="WHITE" />
+        <TextField fx:id="txtDriverName" layoutX="202.0" layoutY="48.0" prefHeight="25.0" prefWidth="329.0" />
+        <Label layoutX="141.0" layoutY="89.0" text="NIC" textFill="WHITE" />
+        <Label layoutX="40.0" layoutY="125.0" text="Driving License No" textFill="WHITE" />
+        <Label layoutX="113.0" layoutY="163.0" text="Address" textFill="WHITE" />
+        <Label layoutX="88.0" layoutY="253.0" text="Contact No" textFill="WHITE" />
+        <TextField fx:id="txtNICNumber" layoutX="202.0" layoutY="84.0" prefHeight="25.0" prefWidth="187.0" />
+        <TextField fx:id="txtDrivingLicenNo" layoutX="202.0" layoutY="120.0" prefHeight="25.0" prefWidth="187.0" />
+        <TextArea fx:id="txtAddress" layoutX="202.0" layoutY="156.0" prefHeight="85.0" prefWidth="430.0" />
+        <TextField fx:id="txtContactANo" layoutX="202.0" layoutY="248.0" prefHeight="25.0" prefWidth="187.0" />
+        <Label fx:id="lblDrivernameError" layoutX="509.0" layoutY="53.0" prefHeight="21.0" prefWidth="19.0" />
+        <Label fx:id="lblNicError" layoutX="367.0" layoutY="89.0" prefHeight="21.0" prefWidth="19.0" />
+        <Label fx:id="lblLicenNoError" layoutX="367.0" layoutY="125.0" prefHeight="21.0" prefWidth="19.0" />
+        <Label fx:id="lblContactNoError" layoutX="367.0" layoutY="253.0" prefHeight="21.0" prefWidth="19.0" />
+    </children>
+</AnchorPane>

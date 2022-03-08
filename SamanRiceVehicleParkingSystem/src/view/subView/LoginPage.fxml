@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="342.0" prefWidth="529.0" style="-fx-background-color: #014493;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contoller.subViewContoller.LoginPageContoller">
+   <children>
+      <ImageView fitHeight="71.0" fitWidth="91.0" layoutX="229.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Image/icons8_male_user_60px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="137.0" text="User name : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="186.0" prefHeight="0.0" prefWidth="83.0" text="Password :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXButton layoutX="300.0" layoutY="295.0" onAction="#cancelOnAction" opacity="0.7" prefHeight="33.0" prefWidth="92.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" text="cancel">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/cancelBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="414.0" layoutY="296.0" onAction="#loginOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #c9c9c9; -fx-background-radius: 5;" text="Log In">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label prefHeight="21.0" prefWidth="529.0" style="-fx-background-color: #c9c9c9;" text="  Log In" />
+      <ImageView fitHeight="21.0" fitWidth="19.0" layoutX="506.0" onMouseClicked="#closeClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Image/cancel.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="152.0" layoutY="132.0" onKeyPressed="#usernameEnterPress" prefHeight="31.0" prefWidth="279.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pwdPassword" layoutX="152.0" layoutY="181.0" onKeyPressed="#enterKeyPressed" prefHeight="31.0" prefWidth="279.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblHide" layoutX="404.0" layoutY="187.0" onMousePressed="#showPassword" onMouseReleased="#hidePassword" prefHeight="19.0" prefWidth="20.0">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/noHide.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>
